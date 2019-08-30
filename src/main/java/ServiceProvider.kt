@@ -1,6 +1,6 @@
-package core
+package test_domainn
 
-import core.impl.MemoryImpl
+import test_domainn.impl.MemoryImpl
 
 class ServiceProvider{
 

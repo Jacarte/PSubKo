@@ -1,7 +1,8 @@
-package core
+package test_domainn
 
 import java.util.*
 import kotlin.reflect.jvm.javaType
+import kotlin.reflect.jvm.jvmName
 
 abstract class MessageCenter{
 
@@ -12,6 +13,8 @@ abstract class MessageCenter{
 
 
     fun <T: EventConsumer<E>, E: Event> subscribeEventConsumer(consumer: T){
+
+        println("Subscribing...%s".format(consumer::class.jvmName))
 
         val messageType = consumer::class.supertypes[0].arguments[0].type?.javaType?.typeName ?: throw Exception("The event must have a name")
 

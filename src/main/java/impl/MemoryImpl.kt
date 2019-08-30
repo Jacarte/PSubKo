@@ -1,7 +1,7 @@
-package core.impl
+package test_domainn.impl
 
-import core.Event
-import core.MessageCenter
+import test_domainn.Event
+import test_domainn.MessageCenter
 
 class MemoryImpl : MessageCenter(){
 

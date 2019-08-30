@@ -1,10 +1,8 @@
 package impl
 import com.google.gson.Gson
 import com.rabbitmq.client.*
-import core.*
-import org.w3c.dom.Node
+import test_domainn.*
 import java.lang.Exception
-import kotlin.reflect.KClass
 
 
 class RabbitMQMessageCenter(virtualHost: String, connectionString: String, user: String, password: String, port: Int): MessageCenter() {
@@ -19,6 +17,8 @@ class RabbitMQMessageCenter(virtualHost: String, connectionString: String, user:
     init{
 
 
+
+        System.out.println("Opening client to...%s:%s".format(connectionString, port))
 
         val factory = ConnectionFactory()
         factory.username = user
