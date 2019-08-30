@@ -1,4 +1,4 @@
-Lightweight pub/sub architecture in Kotlin
+Lightweight pub/sub architecture in Kotlin (LiPSubKo)
 ===
 
 This project is the core to create separate computing nodes inside a pub/sub architecture. There are two implementations for message dispatching, one using naive in-memory implementation and another using RabbitMQ client interface. It means to be lightweight. The core package is implemented in Kotlin. 
