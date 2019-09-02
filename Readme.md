@@ -28,7 +28,7 @@ class Process(override var messageCenter: MessageCenter) : ForeverService(){
 
 ```
 
-3. Instantiate the previous declared class in the entrypoint of your application, and then call the main function. This action will create a deadlock with the Java main thread preventing your application closes.
+3. Instantiate the previous declared class in the entrypoint of your application, and then call the main function. This action will create a deadlock with the Java main thread preventing your application to get closed.
 
 ```kt
 import impl.RabbitMQMessageCenter
